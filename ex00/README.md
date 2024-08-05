@@ -72,3 +72,23 @@ Burada iki tür dönüşümü var:
     - toupper fonksiyonunun döndürdüğü int değerini char türüne dönüştürür. Bu dönüşüm, ASCII kodunu tekrar bir karaktere çevirir, böylece ekrana doğru karakter olarak yazdırılabilir.
 
 ---
+
+## Kullanım
+
+- **Derle**:
+  ```sh
+  Make
+
+Derlenmiş programı çalıştırmak için:
+
+- **Argüman olmadan**:
+  ```sh
+  ./converter
+  * LOUD AND UNBEARABLE FEEDBACK NOISE *
+
+- **Argümanlı**:
+  ```sh
+  ./converter merhaba dünya
+  MERHABA DÜNYA
+
+---
