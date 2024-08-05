@@ -75,7 +75,7 @@ Burada iki tür dönüşümü var:
 
 ## Kullanım
 
-- **Derle**:
+Derlemek için:
   ```sh
   Make
 
