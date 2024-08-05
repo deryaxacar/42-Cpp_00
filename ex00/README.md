@@ -78,6 +78,7 @@ Burada iki tür dönüşümü var:
 Derlemek için:
   ```sh
   Make
+   ```
 
 Derlenmiş programı çalıştırmak için:
 
