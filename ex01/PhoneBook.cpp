@@ -12,6 +12,7 @@
 
 #include "PhoneBook.hpp"
 #include <iostream>
+#include <stdio.h>
 
 PhoneBook::PhoneBook()
 {
@@ -48,7 +49,7 @@ void PhoneBook::ADD()
     if (y != 8)
         y++;
     std::cin.clear();
-    fflush(stdin);
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
 void PhoneBook::SEARCH()
@@ -113,7 +114,8 @@ void PhoneBook::SEARCH()
         {
             std::cout << "* Invalid input *" << std::endl;
             std::cin.clear();
-            fflush(stdin);
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
         }
         else if((index >= 0  && index <= 7) && !(index > y - 1))
         {
@@ -128,7 +130,7 @@ void PhoneBook::SEARCH()
             std::cout << "* Wrong index *" << std::endl;
     }
     std::cin.clear();
-    fflush(stdin);
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
 
