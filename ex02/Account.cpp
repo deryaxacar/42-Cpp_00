@@ -12,19 +12,14 @@
 
 #include "Account.hpp"
 #include <iostream>
-// #include <ctime>
 #include <iomanip>//setw(), setfill()
 
-# define BLACK		"\033[0;30m"
-# define RED		"\033[0;31m"
-# define GREEN		"\033[0;32m"
-# define YELLOW		"\033[0;33m"
-# define BLUE		"\033[0;34m"
-# define PURPLE		"\033[0;35m"
-# define CYAN		"\033[0;36m"
-# define WHITE		"\033[0;37m"
-# define END		"\033[m"
-# define RESET		"\033[0m"
+#define RED     "\033[0;31m"
+#define GREEN   "\033[0;32m"
+#define YELLOW  "\033[0;33m"
+#define BLUE    "\033[0;34m"
+#define CYAN    "\033[0;36m"
+#define END     "\033[m"
 
 int	Account::_nbAccounts = 0;
 int	Account::_totalAmount = 0;
@@ -33,14 +28,14 @@ int	Account::_totalNbWithdrawals = 0;
 
 Account::Account(int initial_deposit)
 {
-	_accountIndex = getNbAccounts();// Adding +1 for every account.
-	_amount = initial_deposit;// This parameter adding first creating moment.
-	_nbDeposits = 0;// Initializing here all variables.
-	_nbWithdrawals = 0;// Initializing
-	_displayTimestamp();// Printing time.
+	_accountIndex = getNbAccounts();
+	_amount = initial_deposit;
+	_nbDeposits = 0;
+	_nbWithdrawals = 0;
+	_displayTimestamp();
 	std::cout << "index:" << _accountIndex << ";" << std::flush;
 	std::cout << "amount:" << _amount << ";created" << std::flush << std::endl;
-	_totalAmount += initial_deposit;// For calculate total amount.
+	_totalAmount += initial_deposit;
 }
 
 Account::~Account(void)
@@ -84,12 +79,6 @@ void	Account::displayAccountsInfos(void)
 	std::cout << "withdrawals:" << _totalNbWithdrawals << END << std::flush << std::endl;
 }
 
-/**
- * @brief Get current time stamp.
- * 
- * @link https://stackoverflow.com/questions/27934034/get-current-time-in-mm-dd-yyyy-in-c
- * @link https://codescracker.com/cpp/cpp-date-time.htm
- */
 void	Account::_displayTimestamp(void)
 {
 	std::time_t	time;
@@ -103,14 +92,6 @@ void	Account::_displayTimestamp(void)
 		<< std::setw(2) << std::localtime(&time)->tm_min
 		<< std::setw(2) << std::localtime(&time)->tm_sec
 		<< "] " << std::flush;
-	/*
-	char buffer[16];
-	time_t start;
-	time(&start);
-
-	strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", localtime(&start));
-	std::cout << '[' << buffer << ']';
-	*/
 }
 
 void	Account::makeDeposit(int deposit)
@@ -131,7 +112,7 @@ bool	Account::makeWithdrawal(int withdrawal)
 {
 	_displayTimestamp();
 	std::cout << BLUE << "index:" << _accountIndex << ";" << std::flush;
-	std::cout << "p_amount:" << _amount << ";" << std::flush;// previous amount
+	std::cout << "p_amount:" << _amount << ";" << std::flush;
 	if (withdrawal <= _amount && withdrawal > 0)
 	{
 		getNbWithdrawals();
