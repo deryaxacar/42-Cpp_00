@@ -12,7 +12,7 @@
 
 #include "Account.hpp"
 #include <iostream>
-#include <iomanip>//setw(), setfill()
+#include <iomanip> //setw(), setfill()
 
 #define RED     "\033[0;31m"
 #define GREEN   "\033[0;32m"
@@ -40,16 +40,11 @@ Account::Account(int initial_deposit)
 
 Account::~Account(void)
 {
-	_displayTimestamp();// Printing time.
+	_displayTimestamp();
 	std::cout << "index:" << _accountIndex << ";" << std::flush;
 	std::cout << "amount:" << _amount << ";closed" << std::flush << std::endl;
 }
 
-/**
- * @brief Get account's count.
- * 
- * @return int 
- */
 int	Account::getNbAccounts(void)
 {
 	return (_nbAccounts++);
