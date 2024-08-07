@@ -1,13 +1,22 @@
-## İçindekiler 📚
+<div align="center">
+  <h1>C++ Module 00</h1> <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++ Logo" width="65"></br></br>
+
+</div>
+<p align="center" >
+    Bu repoda bulunan egzersizler, hem teknik becerilerinizi geliştirmek hem de yazılım geliştirme süreçlerine dair deneyim kazanmak için harika fırsatlar sunar. C++’ın ilk temellerini atmamızda yardımcı olur ve C'den C++’ya geçiş aşamasında önemli bir destek sağlar.
+  </p>
+
+
+### İçindekiler 
 - [Ex00 - Megafon](#ex00---megafon)
 - [Ex01 - Benim Harika Telefon Rehberim](#ex01---benim-harika-telefon-rehberim)
 - [Ex02 - Hayalinizdeki İş (Bonus)](#ex02---hayalinizdeki-i̇ş-bonus)
 
+---
+
 <a name="ex00---megafon"></a>
 
-### Ex00 - Megafon
-
----
+### Ex00 - Megafon 📢
 
 Program aşağıdaki işlemleri gerçekleştirir:
 1. **Eğer hiçbir argüman sağlanmamışsa** (yani sadece program adı verilmişse):
@@ -16,7 +25,6 @@ Program aşağıdaki işlemleri gerçekleştirir:
 2. **Bir veya daha fazla argüman sağlanmışsa**:
    - Her bir argümanı büyük harfe çevirir ve ekrana yazdırır.
 
----
 **Kodun yorum satırlı hali**
 
 ---
@@ -103,7 +111,7 @@ Derlenmiş programı çalıştırmak için:
 
 <a name="ex01---benim-harika-telefon-rehberim"></a>
 
-### Ex01 - Benim Harika Telefon Rehberim
+### Ex01 - Benim Harika Telefon Rehberim 📞
 
 ---
 
@@ -353,7 +361,7 @@ void PhoneBook::SEARCH()
 
 <a name="ex02---hayalinizdeki-i̇ş-bonus"></a>
 
-### Ex02 - Hayalinizdeki İş (Bonus)
+### Ex02 - Hayalinizdeki İş (Bonus) 💰⭐
 
 ---
 
