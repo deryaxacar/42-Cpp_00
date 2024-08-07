@@ -757,6 +757,8 @@ Projeyi derlemek ve çalıştırmak için aşağıdaki adımları izleyin:
    ```sh
    ./tests
 
+Not : En son çıktıyla intradaki log dosyasını indirip karşılaştırmanız gerekli herhangi bir sorun yoksa projeniz geçerlidir.
+
 ---
 
 
