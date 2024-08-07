@@ -1,4 +1,4 @@
-### Cpp_00/Ex00
+### C++ Module 00 Exercise 02
 
 ---
 
