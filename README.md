@@ -7,7 +7,7 @@
   </p>
 
 
-### İçindekiler 
+### İçindekiler 📚
 - [Ex00 - Megafon](#ex00---megafon)
 - [Ex01 - Benim Harika Telefon Rehberim](#ex01---benim-harika-telefon-rehberim)
 - [Ex02 - Hayalinizdeki İş (Bonus)](#ex02---hayalinizdeki-i̇ş-bonus)
@@ -88,7 +88,7 @@ Burada iki tür dönüşümü var:
 
 ---
 
-## Kullanım
+## Kullanım ⚙️
 
 Derlemek için:
   ```sh
@@ -119,7 +119,7 @@ Bu kod, bir telefon defteri uygulamasının ana programını temsil eder. Progra
 
 ---
 
-### Özellikler
+### Özellikler 📌
   - **Başlangıç Mesajı:**
     - Program, kullanıcılara hoş geldiniz mesajı gösterir ve sadece `ADD`, `SEARCH` ve `EXIT` komutlarını kabul ettiğini belirtir.
     - Mesaj, kullanıcıya arayüz ve komutlar hakkında bilgi verir.
@@ -128,7 +128,7 @@ Bu kod, bir telefon defteri uygulamasının ana programını temsil eder. Progra
 
 ---
 
-### Komutlar
+### Komutlar ⚙
 
 Programın çalışması sırasında aşağıdaki komutları kullanabilirsiniz:
 
@@ -143,7 +143,7 @@ Programın çalışması sırasında aşağıdaki komutları kullanabilirsiniz:
 
 ---
 
-### Derleme ve Çalıştırma
+### Derleme ve Çalıştırma 🛠️
 
 Programı derlemek ve çalıştırmak için şu adımları izleyebilirsiniz:
 
@@ -180,7 +180,7 @@ Bu adımları takip ederek programınızı derleyebilir ve çalıştırabilirsin
 
 ---
 
-### Kodların detaylı açıklamaları
+### Kodların detaylı açıklamaları 🔍
 
 <details>
 <summary>ADD</summary>
@@ -365,13 +365,13 @@ void PhoneBook::SEARCH()
 
 ---
 
-### Proje Açıklaması
+### Proje Açıklaması 📝
 
 Bu proje, GlobalBanksters United'daki ilk gününüzde karşılaştığınız bir görevi simüle eder. Bir dosya kaybolmuştur ve bu dosyanın yeniden oluşturulması gerekmektedir. Şanslısınız ki, Account.hpp ve Tests.cpp dosyaları hala mevcuttur. Bu bilgilerle, eksik olan Account.cpp dosyasını yeniden oluşturmanız gerekecek.
 
 ---
 
-### Gerekli Dosyalar
+### Gerekli Dosyalar 📁
 
 Projeyi tamamlamak için aşağıdaki dosyaları sağlamanız gerekmektedir:
 
@@ -382,7 +382,7 @@ Projeyi tamamlamak için aşağıdaki dosyaları sağlamanız gerekmektedir:
 
 ---
 
-### Proje Adımları
+### Proje Adımları 📈
 
 1. **Account.hpp ve tests.cpp Dosyalarını İndirin:**
    - Bu dosyalar intranetteki proje sayfasında mevcuttur.
@@ -400,7 +400,7 @@ Projeyi tamamlamak için aşağıdaki dosyaları sağlamanız gerekmektedir:
 
 ---
 
-### Yazmamız Gereken Fonksiyonlar
+### Yazmamız Gereken Fonksiyonlar 📋
 
 Aşağıda, Account.cpp dosyasında yazmanız gereken fonksiyonların listesini ve açıklamalarını bulabilirsiniz:
 
@@ -762,7 +762,7 @@ Getter fonksiyonları, bir sınıfın özel (private) üyelerine erişimi sağla
 
 ---
 
-### Kullanım
+### Kullanım 🛠️
 
 Projeyi derlemek ve çalıştırmak için aşağıdaki adımları izleyin:
 
