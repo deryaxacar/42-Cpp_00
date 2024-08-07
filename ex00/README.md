@@ -1,4 +1,4 @@
-### C++ Module 00 Ex00
+### C++ Module 00 Ex00 - Megafone
 
 ---
 
