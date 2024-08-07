@@ -1,4 +1,4 @@
-### C++ Module 00 Exercise 02
+### C++ Module 00 Ex02
 
 ---
 
