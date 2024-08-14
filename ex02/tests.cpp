@@ -13,7 +13,6 @@
 #include "Account.hpp"
 
 
-// #include <iostream>
 int		main( void ) {
 
 	typedef std::vector<Account::t>							  accounts_t;
@@ -21,15 +20,10 @@ int		main( void ) {
 	typedef std::pair<accounts_t::iterator, ints_t::iterator> acc_int_t;
 
 	int	const				amounts[]	= { 42, 54, 957, 432, 1234, 0, 754, 16576 };
-	// std::cout << "hello" << std::endl;
 	size_t const			amounts_size( sizeof(amounts) / sizeof(int) );
-	// std::cout << "hello1" << std::endl;
 	accounts_t				accounts( amounts, amounts + amounts_size );
-	// std::cout << "hell2" << std::endl;
 	accounts_t::iterator	acc_begin	= accounts.begin();
-	// std::cout << "hell3" << std::endl;
 	accounts_t::iterator	acc_end		= accounts.end();
-	// std::cout << "hell4" << std::endl;
 
 	int	const			d[]			= { 5, 765, 564, 2, 87, 23, 9, 20 };
 	size_t const		d_size( sizeof(d) / sizeof(int) );
