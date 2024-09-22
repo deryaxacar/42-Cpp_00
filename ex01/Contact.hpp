@@ -24,12 +24,15 @@ class Contact {
         std::string number;
         std::string darkestSecret;
     public:
+
+    //setter
     void    setFirstName(std::string str);
     void    setLastName(std::string str);
     void    setNickName(std::string str);
     void    setNumber(std::string str);
     void    setDarkestSecret(std::string str);
-    
+
+    //getter
     std::string getFirstName();
     std::string getLastName();
     std::string getNickName();
