@@ -780,5 +780,5 @@ Not : En son çıktıyla intradaki log dosyasını indirip karşılaştırmanız
 
 ---
 
-<p align="center">© 2025 This project was created by Derya ACAR.</p>
+<p align="center">2025 This project was created by Derya ACAR.</p>
 
