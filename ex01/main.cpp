@@ -22,21 +22,21 @@ int main()
     std::cout << "| *You Can Use Only ADD, SEARCH or EXIT* |" << std::endl;
     std::cout << "\\----------------------------------------/" << std::endl;
 
-    while(1)
+    while (1)
     {
         std::cout << "> Please enter a command: ";
         std::string command;
         std::getline(std::cin, command);
-        if(command == "ADD")
+        if (command == "ADD")
         {
             data.ADD();
             std::cout << "* Informations has added Phonebook *" << std::endl;
         }
-        else if(command == "SEARCH")
+        else if (command == "SEARCH")
             data.SEARCH();
-        else if(command == "EXIT")
+        else if (command == "EXIT")
         {
-            std::cout << "* This Program Exited *\n";
+            std::cout << "* This Program Exited *" << std::endl;
             return (0);
         }
         else

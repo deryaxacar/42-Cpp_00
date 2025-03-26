@@ -10,20 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-#define PHONEBOOK_HPP
+#pragma once
 #include "Contact.hpp"
 
-class PhoneBook {
-    private:
-       Contact cntact[8];
-       int counter;
-       int y;
-       int size;
-    public:
-        PhoneBook();
-        void ADD();
-        void SEARCH();   
-};
+class PhoneBook
+{
+private:
+    Contact cntact[8];
+    int counter;
+    int y;
+    int size;
 
-#endif
+public:
+    PhoneBook();
+    void ADD();
+    void SEARCH();
+};

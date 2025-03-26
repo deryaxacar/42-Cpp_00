@@ -10,51 +10,31 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= phonebook
-SRC		= Contact.cpp main.cpp PhoneBook.cpp 
-OBJ		= $(SRC:.cpp=.o)
+SRC = Contact.cpp main.cpp PhoneBook.cpp 
+OBJ = $(SRC:.cpp=.o)
+CXX = c++
+RM = rm -f
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-RM		= rm -rf
-CC		= c++
-FLAGS	= -Wall -Wextra -Werror -std=c++98
+NAME = phonebook
 
-.c.o:
-	@$(CC) $(FLAGS) -c $< -o $(<:.cpp=.o)
+all: $(NAME)
 
-all 	: $(NAME) cat
+$(NAME): $(OBJ)
+	@$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+	@echo "\033[0;32mDone\033[m"
 
-clean	:
-	@$(RM) $(OBJ)
+clean:
+	@$(RM) $(OBJ) $(NAME)
+	@echo "\033[0;34mclean\033[m"
 
-fclean	: clean
+%.o: %.cpp
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
+
+fclean: clean
 	@$(RM) $(NAME)
+	@echo "\033[0;36mfclean\033[m"
 
-re		: fclean all
+re: fclean $(NAME)
 
-cat	:
-
-	@echo ⠀⠀⠀⢠⣾⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⠀⠀⣰⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⠀⢰⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⣀⣀⣤⣤⣶⣾⣿⣿⣿⡷
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀      
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏
-	@echo ⣿⣿⣿⣇⠀⡾⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-	@echo ⣿⣿⣿⣧⡀⠁⣀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠉⢹⠉⠙⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⠀⣀⣼⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠀⠤⢀⡀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⠿⠋⢃⠈⠢⡁⠒⠄⡀⠈⠁⠀⠀⠀⠀⠀
-	@echo ⣿⣿⠟⠁⠀⠀⠈⠉⠉⠁⠀⠀⠀⠀⠈⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-	@echo ⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-
-$(NAME) :
-	@$(CC) $(FLAGS) -c $(SRC)
-	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+.PHONY: all clean fclean re

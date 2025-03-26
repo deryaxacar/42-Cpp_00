@@ -10,34 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-#define CONTACT_HPP
+#pragma once
 
 #include <iostream>
 #include <string>
 
-class Contact {
-    private:
-        std::string firstName;
-        std::string lastName;
-        std::string nickName;
-        std::string number;
-        std::string darkestSecret;
-    public:
+class Contact
+{
+private:
+    std::string firstName;
+    std::string lastName;
+    std::string nickName;
+    std::string number;
+    std::string darkestSecret;
 
-    //setter
-    void    setFirstName(std::string str);
-    void    setLastName(std::string str);
-    void    setNickName(std::string str);
-    void    setNumber(std::string str);
-    void    setDarkestSecret(std::string str);
+public:
+    // setter
+    void setFirstName(std::string str);
+    void setLastName(std::string str);
+    void setNickName(std::string str);
+    void setNumber(std::string str);
+    void setDarkestSecret(std::string str);
 
-    //getter
+    // getter
     std::string getFirstName();
     std::string getLastName();
     std::string getNickName();
     std::string getNumber();
     std::string getDarkestSecret();
 };
-
-#endif

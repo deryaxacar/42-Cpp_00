@@ -11,21 +11,29 @@
 # **************************************************************************** #
 
 SRC = megaphone.cpp
+OBJ = $(SRC:.cpp=.o)
+CXX = c++
 RM = rm -f
-CPPFLAGS = c++ -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = megaphone
 
 all: $(NAME)
 
-$(NAME):
-	$(CPPFLAGS) -o $(NAME) $(SRC)
+$(NAME): $(OBJ)
+	@$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+	@echo "\033[0;32mDone\033[m"
 
 clean:
-	$(RM) $(OBJ)
+	@$(RM) $(OBJ) $(NAME)
+	@echo "\033[0;34mclean\033[m"
+
+%.o: %.cpp
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
+	@echo "\033[0;36mfclean\033[m"
 
 re: fclean $(NAME)
 
